@@ -16,9 +16,9 @@ export class AppComponent {
     this.dataSource.paginator = this.paginator;
   }
   applyFilter(filterValue: string) {
-    filterValue = filterValue.trim(); // Remove whitespace
-    filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
-    this.dataSource.filter = filterValue;
+   // filterValue = filterValue.trim().toLowerCase(); // Remove whitespace
+    //filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
+    this.dataSource.filter = filterValue.trim().toLowerCase();;
   }
 
 }
